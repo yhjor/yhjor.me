@@ -2,6 +2,7 @@ module.exports = {
   build: {
     postcss: [require('postcss-cssnext')()]
   },
+  plugins: [{ src: '~plugins/ga.js', ssr: false }],
   head: {
     title: 'George Jor | Software Engineer | Hong Kong',
     meta: [

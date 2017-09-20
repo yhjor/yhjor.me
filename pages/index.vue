@@ -83,11 +83,16 @@
   </div>
 </template>
 
+<style>
+  body {
+    font-family: Interface, sans-serif;
+    margin: 0;
+  }
+</style>
+
 <style scoped>
   .page {
-    font-family: Interface, sans-serif;
-
-    min-height: calc(100vh - 16px);
+    min-height: 100vh;
 
     display: flex;
     align-items: center;
