@@ -1,0 +1,14 @@
+{
+  "name": "yhjor.me",
+  "version": "1.0.0",
+  "description": "https://yhjor.me",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt generate"
+  },
+  "author": "George Jor",
+  "dependencies": {
+    "nuxt": "^1.0.0-rc11",
+    "postcss-cssnext": "^3.0.2"
+  }
+}
