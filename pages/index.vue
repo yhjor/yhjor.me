@@ -47,17 +47,6 @@
         </a>
         <span class="separator" />
         <a
-           href="//angel.co/yhjor"
-           target="_blank"
-           rel="noopener noreferrer"
-           data-tooltip="AngelList"
-           data-position="top center"
-           data-inverted
-         >
-           <i class="angellist icon" />
-         </a>
-        <span class="separator" />
-        <a
           href="//twitter.com/yhjor"
           target="_blank"
           rel="noopener noreferrer"
