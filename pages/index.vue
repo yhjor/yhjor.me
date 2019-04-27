@@ -1,19 +1,9 @@
 <template>
   <div class="page">
+    <div><img class="logo" alt="Profile" role="presentation" src="/profile.jpg" /></div>
     <div>
-      <img
-        class="logo"
-        role="presentation"
-        src="/profile.jpg"
-      />
-    </div>
-    <div>
-      <div class="name">
-        George Jor
-      </div>
-      <div class="title">
-        Software Engineer
-      </div>
+      <div class="name">George Jor</div>
+      <div class="title">Reinventing the world with technology</div>
       <hr class="divider" />
       <div class="contact">
         <a
@@ -54,7 +44,7 @@
           data-position="top center"
           data-inverted
         >
-          <i class="twitter icon"/>
+          <i class="twitter icon" />
         </a>
         <span class="separator" />
         <a
@@ -73,81 +63,74 @@
 </template>
 
 <style>
-  body {
-    font-family: Interface, sans-serif;
-    margin: 0;
-  }
+body {
+  font-family: Interface, sans-serif;
+  margin: 0;
+  background-color: black;
+  color: #cccccc;
+}
 </style>
 
 <style scoped>
-  .page {
-    min-height: 100vh;
+.page {
+  min-height: 100vh;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  filter: grayscale(90%);
+  border-radius: 50%;
+  width: 140px;
+
+  display: none;
+
+  @media (min-width: 668px) {
+    margin-right: 1.5em;
+    display: block;
   }
+}
 
-  .logo {
-    filter: grayscale(90%);
-    border-radius: 50%;
-    width: 140px;
+.name {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin-bottom: 0.3em;
 
-    display: none;
-
-    @media (min-width: 668px) {
-      margin-right: 1.5em;
-      display: block;
-    }
+  @media (min-width: 668px) {
+    font-size: 2rem;
   }
+}
 
-  .item {
-    padding: 1rem;
+.title {
+  color: grey;
+  margin-bottom: 0.3em;
 
-    & div {
-      padding: 0.6rem 0;
-    }
-  }
-
-  .name {
-    font-size: 1.5rem;
-    font-weight: bolder;
-    margin-bottom: 0.3em;
-
-    @media (min-width: 668px) {
-      font-size: 2rem;
-    }
-  }
-
-  .title {
-    color: dimgrey;
+  @media (min-width: 668px) {
     font-size: 1.2rem;
-    margin-bottom: 0.3em;
+  }
+}
 
-    @media (min-width: 668px) {
-      font-size: 1.4rem;
-    }
+.contact {
+  color: dimgrey;
+  font-size: 1.35rem;
+
+  @media (min-width: 668px) {
+    font-size: 1.5rem;
   }
 
-  .contact {
+  & a {
+    text-decoration: none;
     color: dimgrey;
-    font-size: 1.35rem;
-
-    @media (min-width: 668px) {
-      font-size: 1.5rem;
-    }
-
-    & a {
-      text-decoration: none;
-      color: dimgrey;
-    }
   }
+}
 
-  .divider {
-    margin: 1.2em 0;
-  }
+.divider {
+  margin: 1.2em 0;
+}
 
-  .separator {
-    padding: 0 0.5em;
-  }
+.separator {
+  padding: 0 0.5em;
+}
 </style>
